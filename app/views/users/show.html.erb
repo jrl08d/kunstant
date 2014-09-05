@@ -30,5 +30,12 @@
   <%= @user.about %>
 </p>
 
+<h3>Goals</h3>
+<% @user.daily_goals.each do |daily_goal| %>
+  <p>
+    <%= @daily_goal.description %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>

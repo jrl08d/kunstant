@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @daily_goal.user %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @daily_goal.description %>
+</p>
+
+<p>
+  <strong>Done:</strong>
+  <%= @daily_goal.done %>
+</p>
+
+<%= link_to 'Edit', edit_daily_goal_path(@daily_goal) %> |
+<%= link_to 'Back', daily_goals_path %>
