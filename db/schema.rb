@@ -11,30 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140904211228) do
+ActiveRecord::Schema.define(version: 0) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "daily_goals", force: true do |t|
-    t.integer  "user_id"
-    t.string   "description"
-    t.boolean  "done"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "daily_goals", ["user_id"], name: "index_daily_goals_on_user_id", using: :btree
-
-  create_table "users", force: true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "password_digest"
-    t.integer  "access"
-    t.string   "name"
-    t.text     "about"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end

@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  resources :daily_goals
-
+  devise_for :users
   resources :users do 
     resources :daily_goals
   end
